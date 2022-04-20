@@ -1,0 +1,3 @@
+SELECT  fename, cfcc
+	FROM pgroads
+	WHERE ST_DWithin(geom, ST_GeometryFromText('POINT(419875.79606161953 110341.10564772133)', 26985), 1000);	
